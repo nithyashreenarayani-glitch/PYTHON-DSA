@@ -1,0 +1,21 @@
+stack=[]
+top=-1
+def push(value):
+    global top
+    top=top+1
+    stack.insert(top,value)
+def pop():
+    global top
+    removed=stack[top]
+    top=top-1
+    return removed
+
+push(10)
+push(20)
+push(30)
+push(40)
+print(stack)
+print(pop())
+print(stack)
+print(pop())
+
