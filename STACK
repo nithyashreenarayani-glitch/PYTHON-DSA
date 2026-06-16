@@ -1,0 +1,10 @@
+def removelastelement(stack):
+    lastindex=len(stack)-1
+    lastvalue=stack[lastindex]
+    del stack[lastindex]
+    return lastvalue
+    
+listt=[10,20,30,40]
+print(removelastelement(listt))
+print("updated list:",listt)
+
