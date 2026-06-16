@@ -1,0 +1,22 @@
+arr=[2,4,6,8,10]
+target=10
+start=0
+end=len(arr)-1
+
+while(start<=end):
+    mid=(start+end)//2
+    
+    
+    if(arr[mid]==target):
+        print(f"found the target value at {mid}")
+        break
+    
+    elif(arr[mid]<target):
+        start=mid+1
+        
+    else:
+        arr[mid]>target
+        end=mid-1
+        
+        
+        
